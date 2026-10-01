@@ -22,7 +22,7 @@ Cleaning of `Log_Template.csv` for the AAI-500 Team 1 project. Decisions are bas
 
 - **Rows:** 600
 - **Columns:** 30 (all original columns, renamed to snake_case and cleaned in place)
-- **Files:** `Olena_Log_Template_Proposed.csv`, `Olena_Log_Template_Cleaning_Steps_Team1.doc`
+- **Files:** `Olena_Log_Template_Proposed.csv`, `Olena_Log_Template_Cleaning_Steps.doc`, `Readme_Raw.md`
 
 ## Columns
 
