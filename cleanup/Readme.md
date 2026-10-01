@@ -2,12 +2,12 @@
 
 Cleaning of `Log_Template.csv` for the AAI-500 Team 1 project. Decisions are based on `Log_Template.csv`, `Log_Template.xlsx` and the dataset `README_Raw.md`.
 
-**Result:** 600 rows (all kept), 28 columns (no columns added). Durations are used exactly as logged.
+**Result:** 600 rows (all kept), 30 columns (none added, none removed). Durations are used exactly as logged.
 
 ## Steps
 
-1. **Checked CSV against XLSX.** Both files hold the same 600 rows and 30 columns. The only differences are one cell in each HH:mm:ss.ms column. The CSV is the working file, and the row order is unchanged.
-2. **Set aside 2 columns and renamed 28.** The two HH:mm:ss.ms columns are not used. The other 28 were renamed to snake_case.
+1. **Checked CSV against XLSX.** Both files hold the same 600 rows and 30 columns. The only differences are one cell in each HH:mm:ss.ms column; the CSV value is kept as is.
+2. **Renamed all 30 columns to snake_case.** Names with spaces, slashes and brackets break Python code. The two HH:mm:ss.ms columns are kept unchanged.
 3. **Fixed inconsistent text.**
    - Replaced en dashes with hyphens in 596 scenario names.
    - Corrected "viaTelegram" to "via Telegram" in 4 rows.
@@ -21,8 +21,8 @@ Cleaning of `Log_Template.csv` for the AAI-500 Team 1 project. Decisions are bas
 # Log_Template_Proposed_Clean - Data Dictionary
 
 - **Rows:** 600
-- **Columns:** 28 (original columns, renamed to snake_case and cleaned in place)
-- **Files:** `Olena_Log_Template_Proposed_Clean.csv`, `Olena_Log_Template_Proposed_Clean.xlsx`
+- **Columns:** 30 (all original columns, renamed to snake_case and cleaned in place)
+- **Files:** `Olena_Log_Template_Proposed.csv`
 
 ## Columns
 
@@ -41,9 +41,11 @@ Cleaning of `Log_Template.csv` for the AAI-500 Team 1 project. Decisions are bas
 | workflow_name | design | CSBI Bot 1 or Bot 2 |
 | workflow_start_time | context | Workflow start, UTC date |
 | workflow_end_time | context | Workflow end, UTC date |
+| workflow_time_hhmmss | reference | Workflow time as logged, HH:mm:ss.ms text |
 | workflow_time_seconds | measure: workflow latency | As logged, whole seconds; running total in batch runs |
 | model_start_time | context | Model call start, UTC date |
 | model_end_time | context | Model call end, UTC date |
+| model_response_time_hhmmss | reference | Model response time as logged, HH:mm:ss.ms text |
 | model_time_seconds | measure: response time (main) | As logged, whole seconds |
 | success | filter | Yes / No / Not executed |
 | error_message | reference | Error text, if any |
