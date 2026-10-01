@@ -18,7 +18,7 @@ Cleaning of `Log_Template.csv` for the AAI-500 Team 1 project. Decisions are bas
 6. **Converted timestamps to dates.** The four timestamp columns are stored as UTC dates instead of text. No durations were recalculated.
 7. **Ran checks (no changes).** Every completed row has a response time. Times range from 2 s to 246 s. Each model has 115 completed rows.
 
-# Log_Template_Proposed_Clean - Data Dictionary
+# Olena_Log_Template_Proposed - Data Dictionary
 
 - **Rows:** 600
 - **Columns:** 30 (all original columns, renamed to snake_case and cleaned in place)
