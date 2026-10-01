@@ -7,7 +7,7 @@ Cleaning of `Log_Template.csv` for the AAI-500 Team 1 project. Decisions are bas
 ## Steps
 
 1. **Checked CSV against XLSX.** Both files hold the same 600 rows and 30 columns. The only differences are one cell in each HH:mm:ss.ms column; the CSV value is kept as is.
-2. **Renamed all 30 columns to snake_case.** Names with spaces, slashes and brackets break Python code. The two HH:mm:ss.ms columns are kept unchanged.
+2. **Renamed all 30 columns to snake_case.** Names with spaces, slashes and brackets can cause problems with Python code. The two HH:mm:ss.ms columns are kept unchanged.
 3. **Fixed inconsistent text.**
    - Replaced en dashes with hyphens in 596 scenario names.
    - Corrected "viaTelegram" to "via Telegram" in 4 rows.
