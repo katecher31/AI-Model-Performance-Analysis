@@ -9,6 +9,6 @@ This folder contains Olena's code and working notes for the final project AAI-50
 - Regression/modeling experiments
 - Supporting plots, statistics, and interpretations
 - Olena_EDA_Stakeholder_Summary
-- IPYNB converted to DOC for the final draft
+- IPYNB converted to DOC and PDF for the final draft
 
 These files represent work in progress as the analysis develops and the team selects the final model.
