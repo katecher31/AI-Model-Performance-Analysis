@@ -2,7 +2,7 @@
 
 This folder contains Olena's code and working notes for the final project AAI-500 USD
 
-#https://data.mendeley.com/datasets/wjz2rjv6yk/1
+https://data.mendeley.com/datasets/wjz2rjv6yk/1
 
 ## Contents
 - ###Exploratory Data Analysis (EDA) folder
