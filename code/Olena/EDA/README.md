@@ -195,8 +195,5 @@ Model choice had a substantial effect on both latency and estimated processing w
 
 A practical multi-model workflow could use expected answer length and task type as routing inputs, but these routing rules should be validated with **answer-quality testing** before production use.
 
-## Scope and Limitations
-
-These findings describe the behavior of the four tested models under this specific local infrastructure, hardware configuration, n8n workflow, and request mix.
-
-The results should therefore be interpreted as **benchmark-specific findings**, not universal performance rankings for these models.
+## Reference
+Agresti, A., & Kateri, M. (2022). *Foundations of statistics for data scientists: With R and Python*. Chapman & Hall/CRC.
