@@ -70,7 +70,7 @@ The notebook also covers a leakage check, a correlation matrix, nested-model F t
 
 | File | Description |
 | --- | --- |
-| `Olena_Full_Candidate_Model_polished.ipynb` | The analysis notebook |
+| `Olena_Full_Candidate_Model.ipynb` | The analysis notebook |
 | `Olena_Log_Template_Proposed.csv` | The workflow log (add it to the repository if it may be shared) |
 | `README.md` | This file |
 
